@@ -1,0 +1,166 @@
+.App {
+  text-align: center;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: left;
+}
+header {
+  background-color: black;
+  padding: 20px;
+  color: #fff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cart-button,
+.login-button {
+  background-color: #fff;
+  color: black;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+.cart-button:hover,
+.login-button:hover {
+  background-color: #ddd;
+}
+
+main {
+  padding: 20px;
+}
+
+main {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.background-image {
+  background-image: url("./images/image3.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+  transition: z-index 0.3s;
+}
+.image-container:hover {
+  z-index: 1;
+}
+.card {
+  margin: 0 10px;
+  text-align: center;
+  background-color: lightslategray;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.card img {
+  width: 265px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.caption {
+  margin-top: 10px;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 6px;
+  width: 200px;
+  border: 2px solid gray;
+  border-radius: 6px;
+  margin-right: 1px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar button {
+  padding: 6px 12px;
+  background-color: grey;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: gray;
+}
+
+.dark-mode-button {
+  background-color: #fff;
+  color: green;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.dark-mode-button.active {
+  background-color: black;
+  color: #fff;
+}
+
+.dark {
+  background-color: black;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-left a {
+  color: black;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.footer-right a {
+  color: black;
+  margin-right: 10px;
+  text-decoration: none;
+}
